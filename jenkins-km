@@ -25,12 +25,10 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Test123') {
             steps {
-                sh '''
-                    set -e
-                    pytest -q
-                '''
+                sh "pytest"
+                sh "whoami"
             }
         }
     }
